@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Lucas Duarte">
+    <meta name="keywords" content="Avaliação 1 html">
+    <title>Avaliação 1</title>
+    <link rel="stylesheet" type="text/css" href="background.css">
+  </head>
+  <body style=" text-align:center;" class="light-mode"> <a href="javascript:lightMode();"
+
+      onclick="javascript:darkMode()"> <img src="light.png" alt="" style="width: 108px; height: 60px;"></a>
+    <a href="javascript:darkMode();" onclick="javascript:lightMode()"><img src="dark.png"
+
+        alt="" style="width: 108px; height: 60px;"></a>
+    <p></p>
+    <script type="text/javascript">   
+      function lightMode() {
+        document.body.className = "light-mode";
+      }
+      function darkMode() {
+        document.body.className = "dark-mode";
+      }
+    </script>
+    <h1> <u>Projeto 1</u></h1>
+    <main>
+      <div class="container">
+        <h2> Calculadora de consumo médio de combustível do veículo:</h2>
+        <div class="input"> <label>Digite a quantidade de litros abastecido no
+            veículo: </label><br>
+          <input id="Litro" placeholder="Quantidade Litro" style="text-align: center;"
+
+            type="number"> </div>
+        <br>
+        <div class="input"> <label> Digite a quilometragem percorrida pelo
+            veículo: </label> <br>
+          <input id="KM" placeholder="Km percorrido" style="text-align: center;"
+
+            type="number"></div>
+        <br>
+        <button id="Calcular">Calcular</button> <input value="Limpar" onclick="Limpa()"
+
+type="button"> </div>
+      <br>
+      A média de consumo de combustível do veículo foi de:
+      <div class="Media" id="Media" type="text"></div>
+      <br>
+      <img src="./carro.png" alt="HTML5 Icon" style="width:100px;height:100px;">
+    </main>
+    <script src="./consumo.js"></script>
+  </body>
+</html>
